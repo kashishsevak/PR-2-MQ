@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Poppins';
+}
+
+.container {
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 33.33%;
+}
+
+/* header section start */
+header {
+    background-color: #fff;
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0 12px 6px #0000000f;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+header .topbar .logo {
+    font-size: 40px;
+    color: #1f1f1f;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+/* header section end */
+
+
+/* features-box section start */
+.features {
+    padding: 40px 0;
+}
+
+.features-box .box {
+    padding: 15px;
+}
+
+.features-box .box h4 {
+    font-size: 21px;
+    font-weight: 600;
+    color: #1f1f1f;
+    margin: 10px 0;
+}
+
+.features-box .box p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* features-box section end */
+
+
+/* about-us section start */
+.about-us {
+    padding: 2rem 0;
+}
+
+.about-us .about-us-content {
+    margin: 0 150px;
+    text-align: center;
+}
+
+.about-us-content h4 {
+    color: #1f1f1f;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-us-content h2 {
+    color: #1f1f1f;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.about-us-content p {
+    color: #777;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    padding: 1rem;
+}
+
+.cards .progress {
+    padding: 0 2rem;
+}
+
+.cards .progress h2 {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.cards .progress ul li {
+    border-bottom: 10px solid #4066d8;
+    margin: 25px 0;
+}
+
+.cards .progress ul li h5 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cards .progress ul li span {
+    font-size: 12px;
+    color: #333;
+}
+
+.cards .progress p {
+    font-size: 18px;
+    color: #777;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.cards .services {
+    padding: 0 2rem;
+}
+
+.cards .services h2 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.cards .services .para {
+    border: 1px solid #b5b5b5;
+    border-radius: 3px;
+}
+
+.cards .services p {
+    padding: 1rem;
+}
+
+.cards .blog {
+    padding: 0 2rem;
+}
+
+.cards .blog h2 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.cards .blog .thumbnail {
+    border-bottom: 1px solid #F7F9FB;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.cards .blog .thumbnail img {
+    display: block;
+    height: 60px;
+    width: 80px;
+    border-radius: 2px;
+}
+
+.cards .blog .thumbnail .thumbnail-content {
+    padding-left: 90px;
+    position: absolute;
+    top: 0;
+}
+
+.cards .blog .thumbnail .thumbnail-content a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #484848;
+}
+
+.cards .blog .thumbnail .thumbnail-content .date {
+    color: #aaa;
+    font-size: 13px;
+}
+
+.cards .blog .thumbnail .thumbnail-content .category {
+    color: #aaa;
+    font-size: 13px;
+}
+
+/* about-us section end */
