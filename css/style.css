@@ -63,7 +63,7 @@ img {
   width: 41.6666%;
 }
 
-.col-3{
+.col-3 {
   width: 25%;
 }
 
@@ -209,7 +209,7 @@ header nav ul li a i {
 }
 
 .portfolio .portfolio-content nav ul li .active::after {
-  content: '';
+  content: "";
   background-color: #1f1f1f;
   width: 100px;
   height: 3px;
@@ -226,7 +226,7 @@ header nav ul li a i {
   position: absolute;
   top: 100%;
   left: 0;
-  transition: all 5s ease-in-out,
+  transition: all 5s ease-in-out;
 }
 
 .portfolio .portfolio-content {
@@ -237,7 +237,6 @@ header nav ul li a i {
   padding-right: 25px;
   padding-bottom: 25px;
 }
-
 
 /* portfolio section end */
 
@@ -310,7 +309,7 @@ header nav ul li a i {
 }
 
 .cards .progress ul .range-100::after {
-  content: '';
+  content: "";
   background-color: #2f2ff4;
   width: 100%;
   height: 10px;
@@ -319,7 +318,7 @@ header nav ul li a i {
 }
 
 .cards .progress ul .range-94::after {
-  content: '';
+  content: "";
   background-color: #2f2ff4;
   width: 94%;
   height: 10px;
@@ -328,7 +327,7 @@ header nav ul li a i {
 }
 
 .cards .progress ul .range-89::after {
-  content: '';
+  content: "";
   background-color: #2f2ff4;
   width: 89%;
   height: 10px;
@@ -337,7 +336,7 @@ header nav ul li a i {
 }
 
 .cards .progress ul .range-78::after {
-  content: '';
+  content: "";
   background-color: #2f2ff4;
   width: 78%;
   height: 10px;
@@ -346,7 +345,7 @@ header nav ul li a i {
 }
 
 .cards .progress ul .range-75::after {
-  content: '';
+  content: "";
   background-color: #2f2ff4;
   width: 75%;
   height: 10px;
@@ -521,7 +520,74 @@ header nav ul li a i {
   font-weight: 500;
   color: #1f1f1f;
 }
-
+.social-icon h3 {
+  font-size: 21px;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0;
+}
+.social-icon ul li a {
+  background: #fff;
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px;
+  margin: 0 4px;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+.social-icon ul li:hover .fa-rss {
+  background-color: #ffc107;
+  color: #fff;
+}
+.social-icon ul li:hover .fa-facebook-f {
+  background-color: #007bff;
+  color: #fff;
+}
+.social-icon ul li:hover .fa-twitter {
+  background-color: #34cfe7;
+  color: #fff;
+}
+.social-icon ul li:hover .fa-vimeo {
+  background-color: #34cfe7;
+  color: #fff;
+}
+.social-icon ul li:hover .fa-youtube {
+  background-color: #ea3749;
+  color: #fff;
+}
+.social-icon ul li:hover .fa-instagram {
+  background-color: #fd7e14;
+  color: #fff;
+}
+.social-icon ul li:hover .fa-pinterest {
+  background-color: #ce1527;
+  color: #fff;
+}
+.social-icon ul li:hover .fa-google-plus-g {
+  background-color: #ffc107;
+  color: #fff;
+}
+.social-icon ul li:hover .fa-dribbble {
+  background-color: #ff4b9f;
+  color: #fff;
+}
+.social-icon ul li:hover .fa-skype {
+  background-color: #34cfe7;
+  color: #fff;
+}
+.social-icon ul li:hover .fa-linkedin {
+  background-color: #17a2b8;
+  color: #fff;
+}
+.social-icon ul li:hover .fa-behance {
+  background-color: #026bdc;
+  color: #fff;
+}
+.social-icon ul li:hover .fa-flickr {
+  background-color: #ff278c;
+  color: #fff;
+}
 .contact-us .contact-us-content .personal-detail {
   padding: 0 15px;
   margin-bottom: 20px;
@@ -588,20 +654,22 @@ header nav ul li a i {
 /* contact-us section end */
 
 /* footer section start */
-footer{
+footer {
   background-color: #f8f9fa;
   padding-top: 40px;
 }
-.footer-content .widget,.footer-content .widget-table{
+.footer-content .widget,
+.footer-content .widget-table {
   margin-bottom: 30px;
 }
-.footer-content .widget h3,.footer-content .widget-table h3{
+.footer-content .widget h3,
+.footer-content .widget-table h3 {
   font-size: 14px;
   font-weight: 600;
   color: #1f1f1f;
   margin-bottom: 20px;
 }
-.footer-content .widget p{
+.footer-content .widget p {
   font-size: 14px;
   font-weight: 400;
   color: #777;
@@ -617,23 +685,23 @@ footer{
   border-radius: 5px;
   text-transform: uppercase;
 }
-.footer-content .widget-table ul li{
+.footer-content .widget-table ul li {
   line-height: 32px;
 }
-.footer-content .widget-table ul li a{
+.footer-content .widget-table ul li a {
   font-size: 14px;
   font-weight: 400;
 }
-.footer-content .widget-table ul li a:hover{
+.footer-content .widget-table ul li a:hover {
   color: #0b47d2;
 }
-.copyright-content{
+.copyright-content {
   background-color: #eff1f4;
   justify-content: center;
   align-items: center;
   padding: 30px 0;
 }
-.copyright-content p{
+.copyright-content p {
   font-size: 13px;
   font-weight: 400;
   color: #333;
