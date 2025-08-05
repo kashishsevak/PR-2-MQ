@@ -37,6 +37,9 @@
     .d-lg-flex {
         display: flex;
     }
+    .d-lg-none{
+        display: none;
+    }
 
     .col-lg-4 {
         width: 33.33%;
