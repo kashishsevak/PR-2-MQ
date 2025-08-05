@@ -34,8 +34,8 @@ img {
   display: flex;
 }
 
-.d-block {
-  display: block;
+.d-none {
+  display: none;
 }
 
 .justify-content-between {
@@ -59,21 +59,6 @@ img {
   width: 50%;
 }
 
-.col-7 {
-  width: 58.3333%;
-}
-
-.col-5 {
-  width: 41.6666%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col {
-  width: 33.33%;
-}
 
 .w-100 {
   width: 100%;
@@ -102,6 +87,7 @@ header .topbar .logo {
 }
 
 header nav ul li {
+  display: none;
   padding: 0 7px;
 }
 
@@ -195,28 +181,29 @@ header nav ul li a i {
 /* hero section start */
 .hero {
   background-color: #f8f9fa;
-  height: 700px;
+  height: 500px;
   position: relative;
 }
 
 .hero .hero-content {
   text-align: center;
   position: absolute;
-  top: 30%;
-  left: 25%;
+  top: 20%;
+  left: 10%;
+  right: 10%;
 }
 
 .hero .hero-content h1 {
-  font-size: 60px;
+  font-size: 46px;
   font-weight: 700;
-  line-height: 70px;
-  margin-bottom: 30px;
+  line-height: 50px;
+  margin-bottom: 20px;
 }
 
 .hero .hero-content p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .hero .hero-content .btn-dark {
@@ -273,10 +260,14 @@ header nav ul li a i {
 .portfolio {
   padding: 80px 0;
 }
-
+.portfolio .portfolio-content nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
 .portfolio .portfolio-content nav ul li {
-  margin: 20px 0;
-  padding: 0 20px;
+  margin: 5px 0;
+  padding: 5px;
 }
 
 .portfolio .portfolio-content nav ul li a {
@@ -293,7 +284,7 @@ header nav ul li a i {
 .portfolio .portfolio-content nav ul li .active::after {
   content: "";
   background-color: #1f1f1f;
-  width: 100px;
+  width: 75px;
   height: 3px;
   position: absolute;
   top: 100%;
@@ -328,7 +319,6 @@ header nav ul li a i {
 }
 
 .about-us .about-us-content {
-  margin: 0 150px;
   text-align: center;
 }
 
@@ -469,32 +459,26 @@ header nav ul li a i {
 .cards .blog h2 {
   font-size: 21px;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 
 .cards .blog .thumbnail {
-  border-bottom: 1px solid #f7f9fb;
   margin-bottom: 16px;
   padding-bottom: 10px;
-  position: relative;
 }
 
 .cards .blog .thumbnail img {
-  display: block;
   height: 60px;
   width: 80px;
   border-radius: 2px;
 }
-
-.cards .blog .thumbnail .thumbnail-content {
-  padding-left: 90px;
-  position: absolute;
-  top: 0;
+.cards .blog .thumbnail .thumbnail-content{
+  margin-left: 5px;
 }
 
 .cards .blog .thumbnail .thumbnail-content a {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   color: #484848;
 }
 
@@ -504,12 +488,12 @@ header nav ul li a i {
 
 .cards .blog .thumbnail .thumbnail-content .date {
   color: #aaa;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .cards .blog .thumbnail .thumbnail-content .category {
   color: #aaa;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 /* about-us section end */
@@ -767,8 +751,11 @@ footer {
 .footer-content .widget-table h3 {
   font-size: 14px;
   font-weight: 600;
-  color: #1f1f1f;
-  margin-bottom: 20px;
+  color: #333;
+  margin: 30px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 2px;
 }
 
 .footer-content .widget p {
@@ -813,6 +800,7 @@ footer {
   font-size: 13px;
   font-weight: 400;
   color: #333;
+  line-height: 32px;
 }
 
 /* footer section end */
