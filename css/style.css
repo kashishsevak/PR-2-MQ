@@ -62,6 +62,10 @@ img {
   width: 33.33%;
 }
 
+.col{
+  width: 16.66%;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -70,7 +74,7 @@ img {
 header {
   background-color: #fff;
   width: 100%;
-  padding: 1rem 0;
+  padding: .5rem 0;
   box-shadow: 0 12px 6px #0000000f;
   position: sticky;
   top: 0;
@@ -86,14 +90,16 @@ header .topbar .logo {
   color: #1f1f1f;
   font-weight: 800;
   letter-spacing: 1.5px;
+  order: 1;
 }
+
 
 header nav ul li {
   padding: 0 7px;
 }
 
 header nav ul li a {
-  padding: 10px 12px;
+  padding: 10px 8px;
   font-size: 12px;
   font-weight: 600;
 }
@@ -177,7 +183,30 @@ header nav ul li a i {
   top: 100%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-
+header .topbar .menu{
+  order: 2;
+  position: relative;
+}
+header .topbar .menu .menu-icon::after{
+  content: '\f0c9';
+  font-family: FontAwesome;
+  position: absolute;
+}
+header .topbar .menu:hover .menu-icon::after{
+  content: '\f00d';
+  font-family: FontAwesome;
+  position: absolute;
+}
+header .menu:hover nav ul{
+  display: block;
+  background-color: #fff;
+  width: 150px;
+  border-radius: 5px;
+  position: absolute;
+  top: 100%;
+  transform: translate(-50px);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 /* header section end */
 
 /* hero section start */
@@ -516,13 +545,14 @@ header nav ul li a i {
   text-align: center;
   font-size: 10px;
   color: #aaa;
+  margin: 30px 0;
 }
 
-.client-logo nav {
+.client-logo .client-images {
   position: relative;
 }
 
-.client-logo nav .previous {
+.client-logo .client-images .previous {
   display: none;
   background-color: #fff;
   color: #000;
@@ -532,10 +562,10 @@ header nav ul li a i {
   position: absolute;
   top: 20%;
   left: 0;
-  transition: all 2s ease-in-out;
+  transition: all 0.3s ease;
 }
 
-.client-logo nav .next {
+.client-logo .client-images .next {
   display: none;
   background-color: #fff;
   color: #000;
@@ -545,11 +575,11 @@ header nav ul li a i {
   position: absolute;
   top: 20%;
   right: 0;
-  transition: all 2s ease-in-out;
+  transition: all 0.3s ease;
 }
 
-.client-logo nav:hover .previous,
-.client-logo nav:hover .next {
+.client-logo .client-images:hover .previous,
+.client-logo .client-images:hover .next {
   display: block;
 }
 
