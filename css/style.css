@@ -49,25 +49,31 @@ img {
 .row {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 20px;
 }
 
 .col-12 {
   width: 100%;
+  padding: 0 10px;
 }
 
 .col-6 {
   width: 50%;
+  padding: 0 10px;
 }
 .col-4{
   width: 33.33%;
+  padding: 0 10px;
 }
 
 .col{
   width: 16.66%;
+  padding: 0 10px;
 }
 
 .w-100 {
   width: 100%;
+  padding: 0 10px;
 }
 
 /* header section start */
@@ -186,6 +192,7 @@ header nav ul li a i {
 header .topbar .menu{
   order: 2;
   position: relative;
+  transition: all 0.3s ease;
 }
 header .topbar .menu .menu-icon::after{
   content: '\f0c9';
@@ -198,14 +205,14 @@ header .topbar .menu:hover .menu-icon::after{
   position: absolute;
 }
 header .menu:hover nav ul{
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   background-color: #fff;
-  width: 150px;
   border-radius: 5px;
   position: absolute;
   top: 100%;
   transform: translate(-50px);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: #959da533 0px 8px 24px;
 }
 /* header section end */
 
@@ -291,7 +298,9 @@ header .menu:hover nav ul{
 .portfolio {
   padding: 80px 0;
 }
-
+.portfolio .portfolio-content {
+  position: relative;
+}
 .portfolio .portfolio-content nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -320,28 +329,72 @@ header .menu:hover nav ul{
   width: 75px;
   height: 3px;
   position: absolute;
-  top: 100%;
+  top: 95%;
   left: 0;
 }
-
-.portfolio .portfolio-content nav ul li a:hover::after {
-  content: "";
+.portfolio .portfolio-content nav ul li a::after {
   background-color: #1f1f1f;
-  width: 100%;
+  content: "";
   height: 3px;
   position: absolute;
-  top: 100%;
+  top: 120%;
+  left: 50%;
+  right: 50%;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+.portfolio .portfolio-content nav ul li a:hover::after{
+  top: 95%;
   left: 0;
-  transition: all 5s ease-in-out;
+  right: 0;
+}
+.portfolio .portfolio-content nav span{
+  color: #dadada;
+  font-size: 38px;
+  font-weight: 100;
+  text-wrap: nowrap;
 }
 
-.portfolio .portfolio-content {
+.portfolio .portfolio-wraper{
   position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
-
-.portfolio .portfolio-content img {
-  padding-right: 25px;
-  padding-bottom: 25px;
+.portfolio .portfolio-wraper img{
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio .portfolio-wraper .portfolio-item{
+  background-color: #28282885;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.portfolio .portfolio-wraper:hover .portfolio-item{
+  opacity: 1;
+}
+.portfolio .portfolio-wraper:hover img{
+  transform: scale(1.1);
+}
+.portfolio .portfolio-wraper .portfolio-item a{
+  background-color: #fff;
+  padding: 8px 12px;
+  border-radius: 50%;
+  margin-right: 25px;
+  transition: all 0.3 ease-in-out;
+}
+.portfolio .portfolio-wraper .portfolio-item a:hover{
+  background-color: #2f2ff4;
+  color: #fff;
 }
 
 /* portfolio section end */
@@ -531,59 +584,7 @@ header .menu:hover nav ul{
 
 /* about-us section end */
 
-/* client-logo section start */
-.client-logo {
-  padding: 80px 0;
-  position: relative;
-}
 
-.client-logo ul li a img {
-  padding: 20px 30px;
-}
-
-.client-logo .dots {
-  text-align: center;
-  font-size: 10px;
-  color: #aaa;
-  margin: 30px 0;
-}
-
-.client-logo .client-images {
-  position: relative;
-}
-
-.client-logo .client-images .previous {
-  display: none;
-  background-color: #fff;
-  color: #000;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  padding: 8px 10px;
-  border-radius: 50%;
-  position: absolute;
-  top: 20%;
-  left: 0;
-  transition: all 0.3s ease;
-}
-
-.client-logo .client-images .next {
-  display: none;
-  background-color: #fff;
-  color: #000;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  padding: 8px 10px;
-  border-radius: 50%;
-  position: absolute;
-  top: 20%;
-  right: 0;
-  transition: all 0.3s ease;
-}
-
-.client-logo .client-images:hover .previous,
-.client-logo .client-images:hover .next {
-  display: block;
-}
-
-/* client-logo section end */
 
 /* contact-us section start  */
 .contact-us {
